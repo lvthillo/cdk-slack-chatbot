@@ -50,3 +50,6 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
+src/example.ts
+src/integ.default.ts
+cdk.out/*

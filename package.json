@@ -2,7 +2,7 @@
   "name": "cdk-cloudwatch-alarm-chatbot",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lorenz.vanthillo/cdk-cloudwatch-alarm-chatbot.git"
+    "url": "https://github.com/lvthillo/cdk-cloudwatch-alarm-chatbot.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -31,7 +31,7 @@
   },
   "author": {
     "name": "Lorenz Vanthillo",
-    "email": "lorenz.vanthillo@persgroep.net",
+    "email": "lorenz.vanthillo@gmail.com",
     "organization": false
   },
   "devDependencies": {
@@ -39,7 +39,6 @@
     "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "aws-cdk-lib": "2.1.0",
     "constructs": "10.0.5",
     "eslint": "^8",
     "eslint-import-resolver-node": "^0.3.6",
@@ -61,6 +60,9 @@
   "peerDependencies": {
     "aws-cdk-lib": "^2.1.0",
     "constructs": "^10.0.5"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.38.1"
   },
   "keywords": [
     "cdk"
