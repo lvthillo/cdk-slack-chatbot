@@ -12,6 +12,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     },
   },
   keywords: ['aws', 'awscdk', 'chatbot', 'cloudwatch', 'alarm', 'slack'],
+  license: 'Apache-2.0',
   majorVersion: 1,
   name: PROJECT_NAME,
   publishToPypi: {
