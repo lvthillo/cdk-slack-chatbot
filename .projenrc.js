@@ -11,7 +11,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
       labels: ['auto-approve'],
     },
   },
-  keywords: ['aws', 'cdk', 'chatbot', 'cloudwatch', 'alarm'],
+  keywords: ['aws', 'awscdk', 'chatbot', 'cloudwatch', 'alarm', 'slack'],
   majorVersion: 1,
   name: PROJECT_NAME,
   publishToPypi: {
