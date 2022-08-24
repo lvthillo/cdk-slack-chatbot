@@ -68,9 +68,11 @@
   "keywords": [
     "alarm",
     "aws",
+    "awscdk",
     "cdk",
     "chatbot",
-    "cloudwatch"
+    "cloudwatch",
+    "slack"
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
