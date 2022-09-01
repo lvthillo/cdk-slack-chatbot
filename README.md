@@ -1,9 +1,13 @@
+[![NPM version](https://badge.fury.io/js/cdk-cloudwatch-alarm-chatbot.svg)](https://badge.fury.io/js/cdk-cloudwatch-alarm-chatbot)
+[![PyPI version](https://badge.fury.io/py/cdk-cloudwatch-alarm-chatbot.svg)](https://badge.fury.io/py/cdk-cloudwatch-alarm-chatbot)
+![Release](https://github.com/lvthillo/cdk-cloudwatch-alarm-chatbot/workflows/release/badge.svg)
+
 # cdk-cloudwatch-alarm-chatbot
 A CDK construct which creates an SNS AWS ChatBot (Slack) integration for CloudWatch alarms.
 
 # Example
 Example use of construct
-```
+```ts
 import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as cloudwatch_actions from 'aws-cdk-lib/aws-cloudwatch-actions';
