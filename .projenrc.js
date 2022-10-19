@@ -1,5 +1,5 @@
 const { awscdk } = require('projen');
-const PROJECT_NAME = 'cdk-cloudwatch-alarm-chatbot';
+const PROJECT_NAME = 'cdk-slack-chatbot';
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Lorenz Vanthillo',
   authorAddress: 'lorenz.vanthillo@gmail.com',
@@ -23,7 +23,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'aws-cdk-lib',
   ],
   stability: 'experimental',
-  repository: 'https://github.com/lvthillo/cdk-cloudwatch-alarm-chatbot.git',
+  repository: 'https://github.com/lvthillo/cdk-slack-chatbot.git',
 });
 
 const common_exclude = ['cdk.out', 'cdk.context.json', 'yarn-error.log', 'coverage'];
