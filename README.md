@@ -36,6 +36,7 @@ export class CdkDemoStack extends cdk.Stack {
       topicName: 'slack-alarm',
       slackChannelId: 'xxx',
       slackWorkSpaceId: 'yyy',
+      slackChannelConfigName: 'slack',
     });
 
     alarm.addAlarmAction(new cloudwatch_actions.SnsAction(slackAlarmIntegration.topic));
