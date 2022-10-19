@@ -7,7 +7,7 @@ export interface CdkCloudWatchAlarmChatBotProps {
   readonly slackChannelId: string;
 }
 export class CdkCloudWatchAlarmChatBot extends Construct {
-  public readonly topic: sns.ITopic;
+  public readonly topic: sns.Topic;
   constructor(
     scope: Construct,
     id: string,
