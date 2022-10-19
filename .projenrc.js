@@ -17,7 +17,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: PROJECT_NAME,
   publishToPypi: {
     distName: PROJECT_NAME,
-    module: 'cdk_cloudwatch_alarm_chatbot',
+    module: 'cdk_slack_chatbot',
   },
   deps: [
     'aws-cdk-lib',
