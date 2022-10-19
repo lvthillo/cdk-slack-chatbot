@@ -3,10 +3,14 @@
 ![Release](https://github.com/lvthillo/cdk-slack-chatbot/workflows/release/badge.svg)
 
 # cdk-slack-chatbot
-A CDK construct which creates an SNS AWS ChatBot (Slack) integration for CloudWatch alarms, AWS Config rules, ...
+A CDK construct which creates an SNS AWS ChatBot (Slack) integration for CloudWatch alarms, AWS Config rules, ...\
+More information on how to use this construct can be found [here](https://github.com/lvthillo/cdk-slack-chatbot/blob/main/API.md).
+
+# Architecture
+# <img width="987" alt="Screen Shot 2022-10-19 at 16 54 43" src="https://user-images.githubusercontent.com/14105387/196726730-5431564e-c6c1-4521-af4b-1891de709805.png">
 
 # Example
-Example use of construct
+In this example we create a CloudWatch alarm which integrates with our construct.
 ```ts
 import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
@@ -49,4 +53,5 @@ Test Alarm:
 ```
 $ aws cloudwatch set-alarm-state --alarm-name "xxx" --state-value ALARM --state-reason "testing purposes"
 ```
+
 
