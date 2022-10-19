@@ -8,7 +8,7 @@ export interface CdkCloudWatchAlarmChatBotProps {
 }
 export class CdkCloudWatchAlarmChatBot extends Construct {
   public readonly topic: sns.Topic;
-  
+
   constructor(
     scope: Construct,
     id: string,
