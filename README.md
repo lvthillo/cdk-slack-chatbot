@@ -1,9 +1,9 @@
-[![NPM version](https://badge.fury.io/js/cdk-cloudwatch-alarm-chatbot.svg)](https://badge.fury.io/js/cdk-cloudwatch-alarm-chatbot)
-[![PyPI version](https://badge.fury.io/py/cdk-cloudwatch-alarm-chatbot.svg)](https://badge.fury.io/py/cdk-cloudwatch-alarm-chatbot)
-![Release](https://github.com/lvthillo/cdk-cloudwatch-alarm-chatbot/workflows/release/badge.svg)
+[![NPM version](https://badge.fury.io/js/cdk-slack-chatbot.svg)](https://badge.fury.io/js/cdk-slack-chatbot)
+[![PyPI version](https://badge.fury.io/py/cdk-slack-chatbot.svg)](https://badge.fury.io/py/cdk-slack-chatbot)
+![Release](https://github.com/lvthillo/cdk-slack-chatbot/workflows/release/badge.svg)
 
-# cdk-cloudwatch-alarm-chatbot
-A CDK construct which creates an SNS AWS ChatBot (Slack) integration for CloudWatch alarms.
+# cdk-slack-chatbot
+A CDK construct which creates an SNS AWS ChatBot (Slack) integration for CloudWatch alarms, AWS Config rules, ...
 
 # Example
 Example use of construct
@@ -12,7 +12,7 @@ import * as cdk from 'aws-cdk-lib';
 import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as cloudwatch_actions from 'aws-cdk-lib/aws-cloudwatch-actions';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
-import { CdkCloudWatchAlarmChatBot } from 'cdk-cloudwatch-alarm-chatbot';
+import { CdkSlackChatBot } from 'cdk-slack-chatbot';
 import { Construct } from 'constructs';
 
 export class CdkDemoStack extends cdk.Stack {
@@ -32,10 +32,11 @@ export class CdkDemoStack extends cdk.Stack {
       datapointsToAlarm: 2
     });
 
-    const slackAlarmIntegration = new CdkCloudWatchAlarmChatBot(this, 'SlackIntegration', {
+    const slackAlarmIntegration = new CdkSlackChatBot(this, 'SlackIntegration', {
       topicName: 'slack-alarm',
       slackChannelId: 'xxx',
       slackWorkSpaceId: 'yyy',
+      slackChannelConfigName: 'slack',
     });
 
     alarm.addAlarmAction(new cloudwatch_actions.SnsAction(slackAlarmIntegration.topic));
