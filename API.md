@@ -121,16 +121,27 @@ public readonly topic: Topic;
 ```typescript
 import { CdkSlackChatBotProps } from 'cdk-slack-chatbot'
 
-const CdkSlackChatBotProps: CdkSlackChatBotProps = { ... }
+const cdkSlackChatBotProps: CdkSlackChatBotProps = { ... }
 ```
 
 #### Properties <a name="Properties" id="Properties"></a>
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#cdk-slack-chatbot.CdkSlackChatBotProps.property.slackChannelConfigName">slackChannelConfigName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#cdk-slack-chatbot.CdkSlackChatBotProps.property.slackChannelId">slackChannelId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#cdk-slack-chatbot.CdkSlackChatBotProps.property.slackWorkSpaceId">slackWorkSpaceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#cdk-slack-chatbot.CdkSlackChatBotProps.property.topicName">topicName</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `slackChannelConfigName`<sup>Required</sup> <a name="slackChannelConfigName" id="cdk-slack-chatbot.CdkSlackChatBotProps.property.slackChannelConfigName"></a>
+
+```typescript
+public readonly slackChannelConfigName: string;
+```
+
+- *Type:* string
 
 ---
 
