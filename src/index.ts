@@ -7,7 +7,8 @@ export interface CdkCloudWatchAlarmChatBotProps {
   readonly slackChannelId: string;
 }
 export class CdkCloudWatchAlarmChatBot extends Construct {
-  public readonly topic: sns.ITopic;
+  public readonly topic: sns.Topic;
+
   constructor(
     scope: Construct,
     id: string,
@@ -15,15 +16,17 @@ export class CdkCloudWatchAlarmChatBot extends Construct {
   ) {
     super(scope, id);
 
-    this.topic = new sns.Topic(this, 'Topic', {
+    const topic = new sns.Topic(this, 'Topic', {
       displayName: props.topicName,
     });
+
+    this.topic = topic;
 
     new chatbot.SlackChannelConfiguration(this, 'MySlackChannel', {
       slackChannelConfigurationName: 'cw-alarm-slack',
       slackWorkspaceId: props.slackWorkSpaceId,
       slackChannelId: props.slackChannelId,
-      notificationTopics: [this.topic],
+      notificationTopics: [topic],
     });
   }
 }
