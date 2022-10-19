@@ -85,7 +85,7 @@ Any object.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#cdk-cloudwatch-alarm-chatbot.CdkCloudWatchAlarmChatBot.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#cdk-cloudwatch-alarm-chatbot.CdkCloudWatchAlarmChatBot.property.topic">topic</a></code> | <code>aws-cdk-lib.aws_sns.Topic</code> | *No description.* |
+| <code><a href="#cdk-cloudwatch-alarm-chatbot.CdkCloudWatchAlarmChatBot.property.topic">topic</a></code> | <code>aws-cdk-lib.aws_sns.ITopic</code> | *No description.* |
 
 ---
 
@@ -104,10 +104,10 @@ The tree node.
 ##### `topic`<sup>Required</sup> <a name="topic" id="cdk-cloudwatch-alarm-chatbot.CdkCloudWatchAlarmChatBot.property.topic"></a>
 
 ```typescript
-public readonly topic: Topic;
+public readonly topic: ITopic;
 ```
 
-- *Type:* aws-cdk-lib.aws_sns.Topic
+- *Type:* aws-cdk-lib.aws_sns.ITopic
 
 ---
 
