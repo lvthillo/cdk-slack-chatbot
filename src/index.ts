@@ -1,5 +1,5 @@
-import * as sns from 'aws-cdk-lib/aws-sns';
 import * as chatbot from 'aws-cdk-lib/aws-chatbot';
+import * as sns from 'aws-cdk-lib/aws-sns';
 import { Construct } from 'constructs';
 
 export interface CdkCloudWatchAlarmChatBotProps {
