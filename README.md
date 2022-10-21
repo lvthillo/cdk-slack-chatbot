@@ -17,10 +17,9 @@ import * as cloudwatch from 'aws-cdk-lib/aws-cloudwatch';
 import * as cloudwatch_actions from 'aws-cdk-lib/aws-cloudwatch-actions';
 import * as sqs from 'aws-cdk-lib/aws-sqs';
 import { CdkSlackChatBot } from 'cdk-slack-chatbot';
-import { Construct } from 'constructs';
 
 export class CdkDemoStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
+  constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
     const queue = new sqs.Queue(this, 'HelloCdkQueue', {
@@ -36,15 +35,14 @@ export class CdkDemoStack extends cdk.Stack {
       datapointsToAlarm: 2
     });
 
-    const slackAlarmIntegration = new CdkSlackChatBot(this, 'SlackIntegration', {
+    const slackIntegration = new CdkSlackChatBot(this, 'SlackIntegration', {
       topicName: 'slack-alarm',
-      slackChannelId: 'xxx',
-      slackWorkSpaceId: 'yyy',
+      slackChannelId: 'C02R99X379Q',
+      slackWorkSpaceId: 'TAFF0TAPP',
       slackChannelConfigName: 'slack',
     });
 
-    alarm.addAlarmAction(new cloudwatch_actions.SnsAction(slackAlarmIntegration.topic));
-
+    alarm.addAlarmAction(new cloudwatch_actions.SnsAction(slackIntegration.topic));
   }
 }
 ```
