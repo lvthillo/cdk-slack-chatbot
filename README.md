@@ -37,8 +37,8 @@ export class CdkDemoStack extends cdk.Stack {
 
     const slackIntegration = new CdkSlackChatBot(this, 'SlackIntegration', {
       topicName: 'slack-alarm',
-      slackChannelId: 'C02R99X379Q',
-      slackWorkSpaceId: 'TAFF0TAPP',
+      slackChannelId: 'xxx',
+      slackWorkSpaceId: 'yyy',
       slackChannelConfigName: 'slack',
     });
 
