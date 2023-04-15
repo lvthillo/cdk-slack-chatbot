@@ -61,7 +61,7 @@
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.73.0"
+    "aws-cdk-lib": "^2.74.0"
   },
   "resolutions": {
     "@types/prettier": "2.6.0",
