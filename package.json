@@ -51,7 +51,7 @@
     "jsii-docgen": "^7.2.9",
     "jsii-pacmak": "^1.84.0",
     "npm-check-updates": "^16",
-    "projen": "^0.71.113",
+    "projen": "^0.71.117",
     "standard-version": "^9",
     "ts-jest": "^27",
     "typescript": "^4.9.5"
@@ -61,7 +61,7 @@
     "constructs": "^10.0.5"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.85.0"
+    "aws-cdk-lib": "^2.86.0"
   },
   "resolutions": {
     "@types/babel__traverse": "7.18.2",
