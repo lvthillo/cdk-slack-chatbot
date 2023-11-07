@@ -1803,6 +1803,11 @@ constructs@10.0.5:
   resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.5.tgz#48c0402f1b98bbf5664efff74a8015e6e8a9f41e"
   integrity sha512-IwOwekzrASFC3qt4ozCtV09rteAIAesuCGsW0p+uBfqHd2XcvA5CXqJjgf4eUqm6g8e/noXlVCMDWwC8GaLtrg==
 
+constructs@^10.0.0:
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.3.0.tgz#4c246fce9cf8e77711ad45944e9fbd41f1501965"
+  integrity sha512-vbK8i3rIb/xwZxSpTjz3SagHn1qq9BChLEfy5Hf6fB3/2eFbrwt2n9kHwQcS0CPTRBesreeAcsJfMq2229FnbQ==
+
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
   resolved "https://registry.yarnpkg.com/conventional-changelog-angular/-/conventional-changelog-angular-5.0.13.tgz#896885d63b914a70d4934b59d2fe7bde1832b28c"
@@ -5171,15 +5176,16 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.72.28:
-  version "0.72.28"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.72.28.tgz#3b6cae61f5ca07217278f470b3eacaec49686321"
-  integrity sha512-olnefNj+UZvRzm+vfAHbMmRz/2/b0OQdqY5YoZ+3Tx7u1kR3ubLr+loouWhSY5VB6PUBGWz5MvBUHg5uF0phjQ==
+projen@^0.76.23:
+  version "0.76.23"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.76.23.tgz#8aaafe8017dc060958c9f8628983ce51ca2dbb73"
+  integrity sha512-Svtho6I8YBR5P03VFnkNUGPk9SA8A9mKI3osInzav6SfeeKh7kcI/9XNyUda3DTmxUfsLMZrVwLszJd0EvWJZQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
     chalk "^4.1.2"
     comment-json "4.2.2"
+    constructs "^10.0.0"
     conventional-changelog-config-spec "^2.1.0"
     fast-json-patch "^3.1.1"
     glob "^8"
